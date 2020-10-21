@@ -1,0 +1,244 @@
+.banLabel {
+    text-transform: uppercase;
+    margin-top: 6px;
+    font: normal 10px Arial, sans-serif;
+    padding-bottom: 2px;
+    text-align: left;
+    color: #999
+}
+
+iframe[name="__cmpLocator"] {
+    display: none !important
+}
+
+body.screeningLabel-001-TOPBOARD .DFP-001-TOPBOARD .banLabel {
+    max-width: none !important
+}
+
+body.rwd.screeningADFP .DFP-001-TOPBOARD {
+    padding: 15px 0
+}
+
+body.screeningADFP .back-to-top span,
+body.screeningADFP .ppg__close--small,
+body.screeningADFP .ppg__fab-circle,
+body.screeningADFP a,
+body.screeningADFP a *,
+body.screeningADFP area {
+    cursor: pointer !important
+}
+
+body.winieta #page-top:not(.fixed) {
+    position: relative
+}
+
+body.winieta #page-top:not(.fixed) #pageHead .imgw img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2
+}
+
+body.winieta #page-top:not(.fixed) #pageHead.hasBanner {
+    min-height: 90px
+}
+
+#pageHead.hasBanner .banLabel {
+    position: absolute;
+    top: 20px;
+    right: -40px;
+    padding: 3px 5px;
+    margin: 0;
+    transform: rotate(-90deg);
+    background: #fff
+}
+
+body.dfp-forum #pageHead.hasBanner .banLabel {
+    right: -36px
+}
+
+body.dfp-forum.winieta {
+    width: auto !important
+}
+
+#pageHead.hasBanner .column.col1 {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    height: 100%
+}
+
+body.dfp-gazetawyborcza #pageHead.hasBanner .c0 {
+    top: 40px;
+    position: absolute
+}
+
+@media all and (max-width: 1024px) {
+    .desk {
+        display: none
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .mob {
+        display: none
+    }
+}
+
+.center .btn {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px 10px;
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+    border: solid 2px #000;
+    width: 300px;
+}
+
+.center .btn--orange {
+    background: #45B37D;
+    color: #fff !important;
+    max-width: 300px;
+    text-align: center;
+}
+
+.center .btn--animate-grow {
+    transition-duration: .3s;
+    transition-property: transform;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+
+
+.center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.backpack.dropzone {
+    font-family: 'SF UI Display', 'Segoe UI';
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 150px;
+    font-weight: lighter;
+    color: white;
+    will-change: right;
+    z-index: 2147483647;
+    bottom: 20%;
+    background: #333;
+    position: fixed;
+    user-select: none;
+    transition: left .5s, right .5s;
+    right: 0px;
+}
+
+.backpack.dropzone .animation {
+    height: 80px;
+    width: 250px;
+    
+}
+
+.backpack.dropzone .title::before {
+    content: 'Save to';
+}
+
+.backpack.dropzone.closed {
+    right: -250px;
+}
+
+.backpack.dropzone.hover .animation {
+    animation: sxt-play-anim-hover 0.91s steps(21);
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes sxt-play-anim-hover {
+    from {
+        background-position: 0px;
+    }
+
+    to {
+        background-position: -5250px;
+    }
+}
+
+.backpack.dropzone.saving .title::before {
+    content: 'Saving to';
+}
+
+.backpack.dropzone.saving .animation {
+    
+    animation: sxt-play-anim-saving steps(59) 2.46s infinite;
+}
+
+@keyframes sxt-play-anim-saving {
+    100% {
+        background-position: -14750px;
+    }
+}
+
+.backpack.dropzone.saved .title::before {
+    content: 'Saved to';
+}
+
+.backpack.dropzone.saved .animation {
+    
+    animation: sxt-play-anim-saved steps(20) 0.83s forwards;
+}
+
+@keyframes sxt-play-anim-saved {
+    100% {
+        background-position: -5000px;
+    }
+}
